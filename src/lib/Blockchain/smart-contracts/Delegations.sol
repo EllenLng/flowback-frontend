@@ -41,6 +41,7 @@ contract Delegations is RightToVote {
 
     function delegate(uint _groupId, address _delegateTo) public {
         require(addressIsDelegate(_groupId, _delegateTo), "The address is not a delegate in the specified group");
+        require(!addressIsDelegate(_groupId, msg.sender), "You may not meta delegate");
         require(delegaterIsInGroup(_groupId), "You can only delegate in groups you are a member of.");
         require(!hasDelegatedInGroup(_groupId), "You have an active delegation in this group.");
         require(_delegateTo != msg.sender, "You can not delegate to yourself");
