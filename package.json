@@ -14,6 +14,8 @@
         "format": "prettier --write --plugin-search-dir=. ."
     },
     "devDependencies": {
+        "@nomiclabs/hardhat-ethers": "^2.2.3",
+        "@nomiclabs/hardhat-waffle": "^2.0.6",
         "@playwright/test": "^1.22.2",
         "@sveltejs/adapter-auto": "next",
         "@sveltejs/kit": "next",
@@ -21,9 +23,13 @@
         "@typescript-eslint/eslint-plugin": "^5.27.0",
         "@typescript-eslint/parser": "^5.27.0",
         "autoprefixer": "^10.4.8",
+        "chai": "^4.3.10",
         "eslint": "^8.16.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-svelte3": "^4.0.0",
+        "ethereum-waffle": "^4.0.10",
+        "ethers": "^5.7.2",
+        "hardhat": "^2.19.0",
         "postcss": "^8.4.16",
         "prettier": "^2.6.2",
         "prettier-plugin-svelte": "^2.7.0",
@@ -42,17 +48,17 @@
         "@shopify/draggable": "^1.0.0-beta.8",
         "chart.js": "^4.1.2",
         "cookie": "^0.4.1",
+        "crypto-js": "^4.2.0",
         "date-picker-svelte": "^2.2.0",
         "dotenv": "^16.0.2",
+        "ethers": "^5.7.2",
+        "foundry": "^4.7.0",
         "javascript-time-ago": "^2.5.9",
         "sapper": "^0.29.3",
         "svelte-chartjs": "^3.1.0",
         "svelte-easy-crop": "^2.0.1",
         "svelte-fa": "^3.0.3",
         "svelte-i18n": "^3.4.0",
-        "crypto-js": "^4.2.0",
-        "ethers": "^5.7.2",
         "web3": "^4.2.1"
-        
     }
 }
